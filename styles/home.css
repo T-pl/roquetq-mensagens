@@ -1,0 +1,56 @@
+.content{
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-template-rows: 11.4rem 1fr;
+  grid-template-areas: 
+  'header header'
+  'left right';
+}
+ 
+header{
+  grid-area: header;
+}
+
+#background-body{
+  grid-area: left;
+  background: url('../assets/Saly-6.png') no-repeat top/contain;
+}
+
+main{
+  grid-area: right;
+
+  display: flex;
+  align-items: center;
+}
+
+main .container{
+  width: min(36.3rem 100%);
+}
+
+main h2{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  color: var(--black);
+  font-size: clamp(2px, 5vw, 2.8rem);
+  margin-bottom: 2.4rem;
+}
+
+input{
+  border-radius: .8rem;
+  border: .2rem solid var(--gray-blue);
+  padding: 0 1.6rem;
+  height: 5rem;
+}
+
+input, button, .btn-enviar{
+  width: 100%;
+  margin: 1.8rem;
+}
+
+.diviser{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
