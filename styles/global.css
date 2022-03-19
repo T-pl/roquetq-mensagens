@@ -19,6 +19,7 @@ html{
  --gray-dark: #4D5E77;
  --gray-blue: #A1B2CD;
  --gray-light: #E5EAF1;
+ --gray-medium: #eaecf2;
 
  /* transforma o User Agent em 10px */
  font-size: 62.5%;

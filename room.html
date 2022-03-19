@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rocket.q Perguntas e Respostas</title>
+  <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
 
   <!-- Styles CSS -->
   <link rel="stylesheet" href="./styles/global.css">
@@ -35,7 +36,95 @@
         </a>
       </div>
     </header>
+    <main>
+      <section id="form-sala">
+        <h2>Faça um Pergunta</h2>
+        <form action="#">
+          <label class="sr-only" for-id="question">O que quer perguntar?</label>
+          <textarea name="question" id="question" placeholder="O que você quer perguntar?"></textarea>
+          <footer>
+            <div class="anonimo">
+              <img src="./assets/cadeado.svg" alt="Cadeado Segurança">
+              Essa pergunta é anônima!
+            </div>
+            <button type="button" title="Enviar">Enviar</button>
+          </footer>
+        </form>
+      </section>
+      <section id="questions">
+        <h2 class="sr-only">Perguntas da Comunidade</h2>
+        <div class="secao-question">
+
+          <div class="question-wrapper">
+            <div class="question-content">
+              <div class="user">
+                <img src="./assets/usuario.svg" alt="Avatar">
+              </div>
+              <div class="question">
+                <p>Qual a diferença entre const, var e let no JS?</p>
+              </div>
+            </div>
+            <div class="actions">
+              <a href="#">
+                <img src="/assets/check.svg" alt="Lida">
+                Marcar como lida
+              </a>
+              <a href="#">
+                <img src="/assets/excluir.svg" alt="Excluir">
+                Excluir
+              </a>
+            </div>
+          </div>
+
+          <div class="question-wrapper">
+            <div class="question-content">
+              <div class="user">
+                <img src="./assets/usuario.svg" alt="Avatar">
+              </div>
+              <div class="question">
+                <p>O que é JAVA?</p>
+              </div>
+            </div>
+            <div class="actions">
+              <a href="#">
+                <img src="/assets/check.svg" alt="Lida">
+                Marcar como lida
+              </a>
+              <a href="#">
+                <img src="/assets/excluir.svg" alt="Excluir">
+                Excluir
+              </a>
+            </div>
+          </div>
+
+          <div class="question-wrapper read">
+            <div class="question-content">
+              <div class="user">
+                <img src="./assets/usuario.svg" alt="Avatar">
+              </div>
+              <div class="question">
+                <p>O que é COBOL?</p>
+              </div>
+            </div>
+            <div class="actions">
+              <a href="#">
+                <img src="/assets/excluir.svg" alt="Excluir">
+                Excluir
+              </a>
+            </div>
+          </div>
+          
+        </div>
+
+      </section>
+      <!-- <div class="secao-conversas">
+        <img src="./assets/ilustrucacao-conversa.svg" alt="Mensagens trocadas">
+        <h2>Nenhuma pergunta por aqui...</h2>
+        Faça sua primeira pergunta e envie o código dessa sala para os seus amigos!
+      </div> -->
+    </main>
   </div>
+
 </body>
 
 </html>
