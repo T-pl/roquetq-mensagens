@@ -19,12 +19,14 @@ html{
  --gray-dark: #4D5E77;
  --gray-blue: #A1B2CD;
  --gray-light: #E5EAF1;
+
+ /* transforma o User Agent em 10px */
  font-size: 62.5%;
 }
 
 body{
+  display: flex;
   height: 100vh;
-  width: 100vw;
   background: var(--background);
 }
 
@@ -71,7 +73,7 @@ button, .btn-enviar{
   transition: .2s;
 }
 
-.btn-enviar:hover{
+button:hover, .btn-enviar:hover{
   filter: brightness(1.2);
 }
 
