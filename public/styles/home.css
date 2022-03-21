@@ -13,7 +13,7 @@ header {
 
 #background-body {
   grid-area: left;
-  background: url("../../public/images/Ilustração.svg") no-repeat top/contain;
+  background: url("/images/ilustracao.svg") no-repeat top/contain;
   background-position: -1rem;
 }
 
