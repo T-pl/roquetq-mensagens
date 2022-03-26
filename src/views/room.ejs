@@ -27,12 +27,12 @@
 <body>
   <div id="room" class="content">
     <header>
-      <a href="./home.html" title="Home">
+      <a href="/" title="Home">
         <img src="/images/Logo.png" alt="Logo Principal" />
       </a>
       <div class="buttons">
-        <div class="button outlined">
-          #124323
+        <div class="button outlined" id="room-id" data-id="323232">
+          #323232
           <img src="/images/copy.svg" alt="Botão Copiar">
         </div>
         <a href="#" class="button btn-enviar">
@@ -44,7 +44,7 @@
     <main>
       <section id="form-sala">
         <h2>Faça um Pergunta</h2>
-        <form action="#">
+        <form action="#" method="post">
           <label class="sr-only" for-id="question">O que quer perguntar?</label>
           <textarea name="question" id="question" placeholder="O que você quer perguntar?"></textarea>
           <footer>
@@ -80,11 +80,11 @@
               </div>
             </div>
             <div class="actions">
-              <a href="#" class="check">
+              <a href="#" class="check" data-id="2">
                 <img src="/images/check.svg" alt="Lida">
                 Marcar como lida
               </a>
-              <a href="#" class="delete">
+              <a href="#" class="delete" data-id="2">
                 <img src="/images/excluir.svg" alt="Excluir">
                 Excluir
               </a>
@@ -101,11 +101,11 @@
               </div>
             </div>
             <div class="actions">
-              <a href="#" class="check">
+              <a href="#" class="check" data-id="3">
                 <img src="/images/check.svg" alt="Lida">
                 Marcar como lida
               </a>
-              <a href="#" class="delete">
+              <a href="#" class="delete" data-id="3">
                 <img src="/images/excluir.svg" alt="Excluir">
                 Excluir
               </a>
@@ -122,12 +122,13 @@
               </div>
             </div>
             <div class="actions">
-              <a href="#" class="delete">
+              <a href="#" class="delete" data-id="1">
                 <img src="/images/excluir.svg" alt="Excluir">
                 Excluir
               </a>
             </div>
           </div>
+          
 
         </div>
 
@@ -143,12 +144,12 @@
           <h2>Excluir pergunta</h2>
           <p>Tem certeza que deseja excluir essa pergunta?</p>
     
-          <form action="#" action="POST">
+          <form id="form-modal" action="#" method="POST">
             <label class="sr-only" for-id="password">Digite sua senha:</label>
             <input id="password" title="senha" placeholder="Senha" autocomplete="new-password" type="password">
             <div class="buttons">
               <div class="button grey btn-enviar cancel">Cancelar</div>
-              <button class="excluir" type="button">Excluir</button>
+              <button class="excluir" type="button">Sim, excluir</button>
             </div>
     
           </form>
